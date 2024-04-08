@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(315deg, #b8c6db 0%, #03193a 100%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  /* 
+    prikazujemo crnu, providnu (0.1), senku iza kviza, i to:
+    0px horizontalno u odnosu na kviz kontejner
+    0px vertikalno u odnosu na kviz kontejner
+    10px zamućenost senke (veći broj - veća zamućenost)
+    2px raširenost senke (veći broj - veća raširenost)
+  */
+  box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+}
+
+.quiz-header {
+  padding: 64px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+ul {
+  list-style-type: none; /* uklanjamo kružiće ispred članova elemenata liste */
+  padding: 0;
+}
+
+li {
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+/* kada prevučemo mišem preko labele primeni sledeća svojstva */
+label:hover {
+  /* kursor će biti u vidu ručice (ikonica) */
+  cursor: pointer;
+}
+
+/* stilizujemo dugme */
+button {
+  background-color: #8e44ad;
+  color: #fff;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* kada prevučemo mišem preko labele primeni sledeća svojstva */
+button:hover {
+  /* kursor će biti u vidu ručice (ikonica) */
+  cursor: pointer;
+  /* primeni odgovarajuću pozadinsku boju */
+  background-color: #732d91;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Kviz</title>
+</head>
+
+<body>
+  <div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      <!-- mesto za pitanje i odgovore -->
+      <h2 id="question">Pitanje</h2>
+
+      <!-- za svaki odgovor definišemo polje sa posebnom id oznakom (a, b, c, d) -->
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">odgovor 1</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">odgovor 2</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">odgovor 3</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">odgovor 4</label>
+        </li>
+      </ul>
+    </div>
+
+    <!-- prikazujemo dugme za prelaz na sledeće pitanje -->
+    <button id="submit">Sledeće pitanje</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
